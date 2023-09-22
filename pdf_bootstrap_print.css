@@ -1,0 +1,200 @@
+@media print {
+    *,
+    *::before,
+    *::after {
+        text-shadow: none !important;
+        box-shadow: none !important;
+    }
+
+    a:not(.btn) {
+        text-decoration: underline;
+    }
+
+    abbr[title]::after {
+        content: " (" attr(title) ")";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #adb5bd;
+        page-break-inside: avoid;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+
+    @page {
+        size: a3;
+    }
+
+    body {
+        min-width: 992px !important;
+    }
+
+    .container {
+        min-width: 992px !important;
+    }
+
+    .badge {
+        border: 1px solid #000;
+    }
+
+    .table {
+        border-collapse: collapse !important;
+    }
+
+    .table td,
+    .table th {
+        background-color: #fff !important;
+    }
+
+    .table-bordered th,
+    .table-bordered td {
+        border: 1px solid #dee2e6 !important;
+    }
+
+    .table-dark {
+        color: inherit;
+    }
+
+    .table-dark th,
+    .table-dark td,
+    .table-dark thead th,
+    .table-dark tbody + tbody {
+        border-color: #dee2e6;
+    }
+}
+
+.cadastre_format {
+    font-size: 14px;
+    display: inline-block;
+    flex-direction: row;
+    margin: 5px 5px 10px 5px;
+}
+
+.cadastre_format.cadastre_stacked {
+    margin: 5px 5px 10px 0px;
+}
+
+.cadastre_format.cadastre_stacked .insee,
+.cadastre_format.cadastre_stacked .prefix,
+.cadastre_format.cadastre_stacked .section,
+.cadastre_format.cadastre_stacked .parcelle {
+    margin: 0;
+    padding: 3px 2px;
+    min-width: inherit;
+}
+
+.cadastre_format.cadastre_short .section {
+    border-radius: 5px 0 0 5px;
+}
+
+.cadastre_format.cadastre_short .section .slabel {
+    border-radius: 0 0 0 5px;
+}
+
+.cadastre_format .insee, .cadastre_format .prefix, .cadastre_format .section, .cadastre_format .parcelle {
+    display: inline-block;
+    flex-direction: column;
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.cadastre_format .insee .value, .cadastre_format .prefix .value, .cadastre_format .section .value, .cadastre_format .parcelle .value {
+    padding: 2px 5px 0px 5px;
+    font-weight: 400;
+}
+
+.cadastre_format .insee {
+    border-radius: 5px 0 0 5px;
+    margin-right: 2px;
+    border-color: #9b08d2;
+    background: rgba(155, 8, 210, 1);
+    color: #fff;
+}
+
+.cadastre_format .insee .slabel {
+    border-radius: 0 0 0 5px;
+}
+
+.cadastre_format .prefix {
+    margin-right: 2px;
+    border-color: #6b6b6b;
+    background: rgba(107, 107, 107, 1);
+    color: #fff;
+}
+
+.cadastre_format .section {
+    margin-right: 2px;
+    border-color: #e01050;
+    background: rgba(224, 16, 80, 1);
+    color: #fff;
+    min-width: 42px;
+}
+
+.cadastre_format .parcelle {
+    border-radius: 0 5px 5px 0;
+    border-color: #334193;
+    background: rgba(51, 65, 147, 1);
+    color: #fff;
+    min-width: 42px;
+}
+
+.cadastre_format .parcelle .slabel {
+    border-radius: 0 0 5px 0;
+}
+
+.cadastre_format .slabel {
+    display: inline-block;
+    font-size: 7px;
+    width: 100%;
+    text-align: center;
+    padding: 2px 0;
+    background: #f7f7f7;
+    color: #6b6b6b;
+}
+
+.box-red {
+    border: 3px solid #E01050;
+    border-radius: 7px;
+    padding: 15px;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+}
+.box-red h2 {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #E01050;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.box-red .result{
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+
